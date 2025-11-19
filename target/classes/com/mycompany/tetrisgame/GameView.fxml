@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+
+<StackPane xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml"
+           fx:controller="com.mycompany.tetrisgame.controllers.Controller">
+
+    <!-- Game Canvas -->
+    <Canvas fx:id="gameCanvas" width="300" height="600"/>
+
+    <!-- Pause Menu Overlay -->
+    <VBox fx:id="pauseMenu" alignment="CENTER" spacing="20" visible="false"
+          style="-fx-background-color: rgba(0,0,0,0.5); -fx-padding: 50;">
+        <Label text="Paused" style="-fx-font-size: 24px; -fx-text-fill: yellow;"/>
+        <Button fx:id="resumeButton" text="Resume"/>
+        <Button fx:id="mainMenuButton" text="Main Menu"/>
+    </VBox>
+
+    <!-- Game Over Menu Overlay -->
+    <VBox fx:id="gameOverMenu" alignment="CENTER" spacing="20" visible="false"
+          style="-fx-background-color: rgba(0,0,0,0.5); -fx-padding: 50;">
+        <Label text="Game Over!" style="-fx-font-size: 28px; -fx-text-fill: red; -fx-font-weight: bold;"/>
+        <Label fx:id="finalScoreLabel" text="Score: 0" style="-fx-font-size: 20px; -fx-text-fill: yellow;"/>
+        <Button fx:id="retryButton" text="Retry"/>
+        <Button fx:id="mainMenuButton" text="Main Menu"/>
+    </VBox>
+
+    <!-- HUD Score et Niveau -->
+    <VBox alignment="TOP_LEFT" spacing="5" style="-fx-padding: 10; -fx-background-color: rgba(0,0,0,0.3);">
+        <Label fx:id="scoreLabel" text="Score: 0"
+               style="-fx-text-fill: yellow; -fx-font-size: 18px; -fx-font-weight: bold;"/>
+        <Label fx:id="levelLabel" text="Level: 1"
+               style="-fx-text-fill: lightgreen; -fx-font-size: 16px; -fx-font-weight: bold;"/>
+        <Button fx:id="pauseButton" text="Pause" onAction="#togglePause"/>
+    </VBox>
+
+</StackPane>
