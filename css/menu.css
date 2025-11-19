@@ -1,0 +1,43 @@
+.root {
+    -fx-background-color: linear-gradient(to bottom, #1f1f1f, #3b3b3b);
+}
+
+.label.title {
+    -fx-font-size: 60px;
+    -fx-text-fill: #ff5555;
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow(gaussian, black, 5, 0.5, 0, 0);
+}
+
+.button {
+    -fx-font-size: 20px;
+    -fx-text-fill: white;
+    -fx-background-radius: 15;
+    -fx-pref-width: 220px;
+    -fx-pref-height: 50px;
+    -fx-background-color: #ff5555;
+    -fx-cursor: hand;
+    -fx-transition: all 0.2s ease-in-out;
+}
+
+.button:hover {
+    -fx-background-color: #ff7777;
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+}
+
+#settingsButton {
+    -fx-background-color: #00ccff;
+}
+
+#settingsButton:hover {
+    -fx-background-color: #33ddff;
+}
+
+#quitButton {
+    -fx-background-color: #5555ff;
+}
+
+#quitButton:hover {
+    -fx-background-color: #7777ff;
+}

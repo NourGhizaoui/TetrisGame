@@ -1,0 +1,12 @@
+# Fichiers compilés
+*.class
+*.jar
+
+# Dossiers NetBeans / IDE
+nbproject/private/
+build/
+dist/
+
+# Fichiers système
+.DS_Store
+*.log
