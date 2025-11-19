@@ -1,10 +1,5 @@
 package com.mycompany.tetrisgame.controllers;
 
-import com.mycompany.tetrisgame.models.game.GameContext;
-import com.mycompany.tetrisgame.models.game.GameStatee;
-import com.mycompany.tetrisgame.models.game.MenuState;
-import com.mycompany.tetrisgame.models.game.PauseState;
-import com.mycompany.tetrisgame.models.game.PlayingState;
 import com.mycompany.tetrisgame.models.grid.Cell;
 import com.mycompany.tetrisgame.models.grid.Grid;
 import com.mycompany.tetrisgame.models.pieces.Piece;
@@ -12,16 +7,23 @@ import com.mycompany.tetrisgame.models.pieces.PieceFactory;
 import com.mycompany.tetrisgame.models.powerup.SlowDownDecorator;
 import com.mycompany.tetrisgame.models.utils.GameLogger;
 import com.mycompany.tetrisgame.models.utils.GameSettings;
+import com.mycompany.tetrisgame.models.game.GameContext;
 import javafx.animation.AnimationTimer;
 import javafx.application.Platform;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.canvas.Canvas;
 import javafx.scene.canvas.GraphicsContext;
 import javafx.scene.control.Button;
+import javafx.scene.control.Label;
 import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyEvent;
-import javafx.scene.paint.Color;
-import javafx.scene.control.Label; // <- pour Label
+import javafx.scene.layout.VBox;
+import javafx.stage.Stage;
+
+import java.io.IOException;
 
 public class Controller {
 
@@ -29,80 +31,101 @@ public class Controller {
     private Canvas gameCanvas;
 
     @FXML
+    private VBox pauseMenu;
+
+    @FXML
+    private VBox gameOverMenu;
+
+    @FXML
+    private Button pauseButton;
+
+    @FXML
+    private Button resumeButton;
+
+    @FXML
+    private Button retryButton;
+
+    @FXML
+    private Button mainMenuButton;
+
+    @FXML
     private Label scoreLabel;
+
+    @FXML
+    private Label finalScoreLabel;
 
     private GraphicsContext gc;
     private Grid grid;
     private Piece currentPiece;
-    private double lastUpdate = 0;
     private int score = 0;
-    private int level = 1;
-    private int dropSpeed; // vitesse de descente (millisecondes)
-    private AnimationTimer timer; // boucle principale du jeu
+    private int dropSpeed;
+    private AnimationTimer timer;
+    private GameContext gameContext;
 
-    // Configure la grille et la vitesse via GameSettings (Singleton).
-    // Crée une nouvelle pièce et démarre la boucle de jeu.
-    // Active la capture des touches pour contrôler la pièce.
-    public void initialize() {
-        gc = gameCanvas.getGraphicsContext2D();
+    // Movement flags
+    private boolean leftPressed = false;
+    private boolean rightPressed = false;
+    private boolean downPressed = false;
+    private boolean isPaused = false;
 
-        // Charger les paramètres
-        GameSettings settings = GameSettings.getInstance();
-        grid = new Grid(settings.getGridWidth(), settings.getGridHeight());
-        dropSpeed = settings.getInitialDropSpeed();
+    // Movement timer for smooth movement
+    private long lastMoveTime = 0;
+    private long moveInterval = 100_000_000; // 100ms per move
 
-        spawnNewPiece();
-        startGameLoop();
+ @FXML
+public void initialize() {
+    gc = gameCanvas.getGraphicsContext2D();
 
-        // Log démarrage
-        GameLogger.getInstance().log("Jeu démarré");
+    GameSettings settings = GameSettings.getInstance();
+    grid = new Grid(settings.getGridWidth(), settings.getGridHeight());
+    dropSpeed = settings.getInitialDropSpeed();
 
-        // Focus sur Canvas pour capter les touches
-        gameCanvas.setFocusTraversable(true);
-        gameCanvas.setOnKeyPressed(this::handleKeyPressed);
+    gameContext = new GameContext();
 
-        gameContext = new GameContext();
-        gameContext.setController(this); // on lie le Controller
-        gameContext.setState(new PlayingState());
+    spawnNewPiece();
 
-        // --- Pattern State ---
-      /*  gameContext = new GameContext();
-        gameContext.setController(this);
-        gameContext.setState(new MenuState()); */
-// on démarre dans le menu
+    pauseMenu.setVisible(false);
+    gameOverMenu.setVisible(false);
 
+    // Button actions
+    resumeButton.setOnAction(e -> togglePause());
+    retryButton.setOnAction(e -> restartGame());
+    mainMenuButton.setOnAction(e -> goToMainMenu());  // works for Game Over menu
+
+    // NEW: Pause menu buttons
+    Button pauseMainMenuButton = (Button) pauseMenu.lookup("#mainMenuButton");
+    if (pauseMainMenuButton != null) {
+        pauseMainMenuButton.setOnAction(e -> goToMainMenu());
     }
 
-    // Génération des pièces (Factory + Decorator)
-    // Factory → crée aléatoirement une des 7 formes classiques (I, O, T, L, J, S,
-    // Z)
-    // Decorator → ajoute un power-up aléatoire (SlowDownDecorator) qui ralentit la
-    // chute
-    private void spawnNewPiece() {
-        Piece piece = PieceFactory.createRandomPiece();
+    gameCanvas.setFocusTraversable(true);
+    gameCanvas.setOnKeyPressed(this::handleKeyPressed);
+    gameCanvas.setOnKeyReleased(this::handleKeyReleased);
 
-        if (Math.random() < 0.2) {
-            piece = new SlowDownDecorator(piece);
-        }
+    startGameLoop();
+}
 
-        currentPiece = piece;
-        currentPiece.setX(grid.getWidth() / 2 - 2);
-        currentPiece.setY(0);
-
-        GameLogger.getInstance().log("Nouvelle pièce générée");
-
-    }
 
     private void startGameLoop() {
         timer = new AnimationTimer() {
+            private long lastUpdate = 0;
+
             @Override
             public void handle(long now) {
-                if (lastUpdate == 0)
-                    lastUpdate = now;
+                if (lastUpdate == 0) lastUpdate = now;
 
-                if ((now - lastUpdate) / 1_000_000 > dropSpeed) {
+                double delta = (now - lastUpdate) / 1_000_000.0;
+                if (delta > dropSpeed) {
                     update();
                     lastUpdate = now;
+                }
+
+                // Smooth movement at fixed interval
+                if (now - lastMoveTime > moveInterval) {
+                    if (leftPressed) moveLeft();
+                    if (rightPressed) moveRight();
+                    if (downPressed) moveDown();
+                    lastMoveTime = now;
                 }
 
                 render();
@@ -110,104 +133,61 @@ public class Controller {
         };
         timer.start();
     }
-    /*
-     * private void update() {
-     * currentPiece.setY(currentPiece.getY() + 1);
-     * 
-     * if (checkCollision()) {
-     * currentPiece.setY(currentPiece.getY() - 1);
-     * placePiece();
-     * 
-     * int linesCleared = grid.clearFullLines();
-     * if (linesCleared > 0) {
-     * score += linesCleared * GameSettings.getInstance().getPointsPerLine();
-     * GameLogger.getInstance().log("Lignes complétées: " + linesCleared);
-     * }
-     * 
-     * spawnNewPiece();
-     * 
-     * if (checkCollision()) {
-     * GameLogger.getInstance().log("Game Over");
-     * stopGame();
-     * }
-     * }
-     * }
-     */
 
-    // Mise à jour de la pièce (STATE)
-    // STATE Pattern → la méthode drop() de la pièce dépend de son état (IdleState,
-    // MovingState, DroppedState)
-    // vérifie les collisions et pose la pièce si nécessaire
-    // Supprime les lignes complètes (COMPOSITE)
+    private void spawnNewPiece() {
+        Piece piece = PieceFactory.createRandomPiece();
+        if (Math.random() < 0.2) piece = new SlowDownDecorator(piece);
+
+        currentPiece = piece;
+        currentPiece.setX(grid.getWidth() / 2 - 2);
+        currentPiece.setY(0);
+
+        GameLogger.getInstance().log("New piece spawned");
+    }
+
     private void update() {
         currentPiece.drop();
 
         if (checkCollision()) {
-            // Revenir à la position précédente
             currentPiece.setY(currentPiece.getY() - 1);
-
-            // Poser la pièce dans la grille
             placePiece();
 
-            // Vérifier et supprimer les lignes complètes
             int linesCleared = grid.clearFullLines();
             if (linesCleared > 0) {
                 score += linesCleared * GameSettings.getInstance().getPointsPerLine();
-                // scoreLabel.setText("Score: " + score);
-
-                Platform.runLater(() -> scoreLabel.setText("Score: " + score));
-
-                GameLogger.getInstance().log("Lignes complétées: " + linesCleared);
-                System.out.println("Score actuel: " + score);
-                // scoreLabel.setText("Score: " + score);
-                // Afficher le score mis à jour
+                Platform.runLater(new Runnable() {
+                    @Override
+                    public void run() {
+                        scoreLabel.setText("Score: " + score);
+                    }
+                });
             }
 
-            // Générer une nouvelle pièce
             spawnNewPiece();
-
-            // **Game Over uniquement si la nouvelle pièce est déjà en collision**
-            if (checkCollision()) {
-                GameLogger.getInstance().log("Game Over");
-                stopGame(); // Affiche Game Over et score final
-            }
+            if (checkCollision()) stopGame();
         }
     }
 
-    private Color getPieceColor(Piece piece) {
-        GameSettings settings = GameSettings.getInstance();
-        // Assumons que Piece a une méthode getTypeIndex() qui retourne 0 à 6 selon le
-        // type I,O,T,L,J,S,Z
-        int index = piece.getTypeIndex();
-        return settings.getPieceColors()[index];
-    }
-
-    // cOMPOSITE Pattern → chaque Cell et Line fait partie de la grille, ce qui
-    // permet de dessiner toutes les lignes facilement.
     private void render() {
         gc.clearRect(0, 0, gameCanvas.getWidth(), gameCanvas.getHeight());
-
         double cellWidth = gameCanvas.getWidth() / grid.getWidth();
         double cellHeight = gameCanvas.getHeight() / grid.getHeight();
 
-        // Dessiner la grille
+        // Draw grid
         for (int y = 0; y < grid.getHeight(); y++) {
             for (int x = 0; x < grid.getWidth(); x++) {
                 Cell cell = grid.getCell(x, y);
-                gc.setFill(cell.isFilled() ? Color.GRAY : Color.LIGHTGRAY);
+                gc.setFill(cell.isFilled() ? javafx.scene.paint.Color.GRAY : javafx.scene.paint.Color.LIGHTGRAY);
                 gc.fillRect(x * cellWidth, y * cellHeight, cellWidth, cellHeight);
-                gc.setStroke(Color.BLACK);
+                gc.setStroke(javafx.scene.paint.Color.BLACK);
                 gc.strokeRect(x * cellWidth, y * cellHeight, cellWidth, cellHeight);
             }
         }
 
-        // Dessiner pièce actuelle
-        // Dessiner pièce actuelle
-        // Dessiner pièce actuelle
+        // Draw current piece
         int[][] shape = currentPiece.getShape();
-        Color color = GameSettings.getInstance().getPieceColors()[currentPiece.getTypeIndex()];
+        javafx.scene.paint.Color color = GameSettings.getInstance().getPieceColors()[currentPiece.getTypeIndex()];
         gc.setFill(color);
-
         for (int i = 0; i < shape.length; i++) {
             for (int j = 0; j < shape[i].length; j++) {
                 if (shape[i][j] == 1) {
@@ -218,7 +198,6 @@ public class Controller {
                 }
             }
         }
-
     }
 
     private boolean checkCollision() {
@@ -228,12 +207,8 @@ public class Controller {
                 if (shape[i][j] == 1) {
                     int x = currentPiece.getX() + j;
                     int y = currentPiece.getY() + i;
-
-                    if (x < 0 || x >= grid.getWidth() || y >= grid.getHeight())
-                        return true;
-
-                    if (grid.getCell(x, y).isFilled())
-                        return true;
+                    if (x < 0 || x >= grid.getWidth() || y >= grid.getHeight()) return true;
+                    if (grid.getCell(x, y).isFilled()) return true;
                 }
             }
         }
@@ -251,98 +226,137 @@ public class Controller {
                 }
             }
         }
-        GameLogger.getInstance().log("Pièce posée dans la grille");
     }
 
-    public AnimationTimer getTimer() {
-        return timer;
-    }
-
-    public Button getPauseButton() {
-        return pauseButton;
-    }
-
-    // Contrôles clavier
-    @FXML
-    private void handleKeyPressed(KeyEvent event) {
-        switch (event.getCode()) {
+private void handleKeyPressed(KeyEvent event) {
+    KeyCode code = event.getCode();
+    if (code != null) {
+        switch (code) {
             case LEFT:
-                currentPiece.setX(currentPiece.getX() - 1);
-                if (checkCollision())
-                    currentPiece.setX(currentPiece.getX() + 1);
+                if (!isPaused) leftPressed = true;
                 break;
             case RIGHT:
-                currentPiece.setX(currentPiece.getX() + 1);
-                if (checkCollision())
-                    currentPiece.setX(currentPiece.getX() - 1);
+                if (!isPaused) rightPressed = true;
                 break;
             case DOWN:
-                currentPiece.setY(currentPiece.getY() + 1);
-                if (checkCollision())
-                    currentPiece.setY(currentPiece.getY() - 1);
+                if (!isPaused) downPressed = true;
                 break;
             case UP:
-                currentPiece.rotate();
-                if (checkCollision())
-                    currentPiece.rotateBack();
+                if (!isPaused) {
+                    currentPiece.rotate();
+                    if (checkCollision()) currentPiece.rotateBack();
+                }
+                break;
+            case ESCAPE:
+                togglePause();
+                event.consume();
                 break;
             default:
                 break;
         }
-
-        render();
     }
+}
+
+private void handleKeyReleased(KeyEvent event) {
+    KeyCode code = event.getCode();
+    if (code != null) {
+        switch (code) {
+            case LEFT:
+                leftPressed = false;
+                break;
+            case RIGHT:
+                rightPressed = false;
+                break;
+            case DOWN:
+                downPressed = false;
+                break;
+            default:
+                break;
+        }
+    }
+}
+
+
+    private void moveLeft() {
+        currentPiece.setX(currentPiece.getX() - 1);
+        if (checkCollision()) currentPiece.setX(currentPiece.getX() + 1);
+    }
+
+    private void moveRight() {
+        currentPiece.setX(currentPiece.getX() + 1);
+        if (checkCollision()) currentPiece.setX(currentPiece.getX() - 1);
+    }
+
+    private void moveDown() {
+        currentPiece.setY(currentPiece.getY() + 1);
+        if (checkCollision()) currentPiece.setY(currentPiece.getY() - 1);
+    }
+
+@FXML
+public void togglePause() {
+    if (!isPaused) {
+        // Pause game loop
+        timer.stop();
+
+        // Reset movement flags
+        leftPressed = false;
+        rightPressed = false;
+        downPressed = false;
+
+        // Show pause menu
+        pauseMenu.setVisible(true);
+        pauseMenu.toFront();
+
+        // Let buttons inside pause menu work
+        pauseMenu.setMouseTransparent(false);
+
+        // Remove focus from canvas temporarily
+        gameCanvas.setFocusTraversable(false);
+    } else {
+        // Hide pause menu
+        pauseMenu.setVisible(false);
+
+        // Reset lastMoveTime to avoid jump
+        lastMoveTime = System.nanoTime();
+
+        // Resume game loop
+        timer.start();
+
+        // Refocus canvas to capture keys again
+        gameCanvas.setFocusTraversable(true);
+        gameCanvas.requestFocus();
+    }
+    isPaused = !isPaused;
+}
+
+
+
 
     private void stopGame() {
         timer.stop();
-        System.out.println("Game Over! Score final: " + score);
-        // GameLogger.getInstance().log("Jeu en pause");
-
+        gameOverMenu.setVisible(true);
+        gameOverMenu.toFront();
+        finalScoreLabel.setText("Score: " + score);
     }
 
-    public int getScore() {
-        return score;
+    private void restartGame() {
+        gameOverMenu.setVisible(false);
+        score = 0;
+        scoreLabel.setText("Score: 0");
+        grid.clearAllCells();
+        spawnNewPiece();
+        timer.start();
     }
 
-    public int getLevel() {
-        return level;
-    }
-
-    @FXML
-    private Button pauseButton;
-
-    private boolean isPaused = false;
-
-    private GameContext gameContext;
-
-    @FXML
-    private void handlePause() {
-        GameStatee state = gameContext.getState();
-
-        // Si on est en PlayingState -> pause
-        // Si on est en PauseState -> resume
-        if (state instanceof PlayingState) {
-            gameContext.pause();
-        } else if (state instanceof PauseState) {
-            gameContext.resume();
+    private void goToMainMenu() {
+        try {
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/mycompany/tetrisgame/MainMenu.fxml"));
+            Parent root = loader.load();
+            Stage stage = (Stage) gameCanvas.getScene().getWindow();
+            stage.setScene(new Scene(root));
+            stage.show();
+        } catch (IOException e) {
+            e.printStackTrace();
         }
     }
-
-    /*
-     * @FXML
-     * private void handlePause() {
-     * if (!isPaused) {
-     * timer.stop(); // Stoppe la boucle principale
-     * pauseButton.setText("Resume");
-     * GameLogger.getInstance().log("Jeu en pause");
-     * } else {
-     * timer.start(); // Reprend la boucle
-     * pauseButton.setText("Pause");
-     * GameLogger.getInstance().log("Jeu repris");
-     * }
-     * isPaused = !isPaused;
-     * }
-     * 
-     */
-
 }

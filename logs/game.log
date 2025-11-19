@@ -667,76 +667,841 @@
 [2025-11-17 20:37:17] Nouvelle pièce générée
 [2025-11-17 20:37:18] Pièce état : MovingState
 [2025-11-17 20:37:19] Jeu en pause
-[2025-11-19 18:58:05] Nouvelle pièce générée
-[2025-11-19 18:58:05] Jeu démarré
-[2025-11-19 18:58:05] Changement d'état : MenuState
-[2025-11-19 18:58:06] Pièce état : MovingState
-[2025-11-19 18:58:07] Pièce tournée
-[2025-11-19 18:58:11] Pièce tournée
-[2025-11-19 18:58:14] Pièce posée dans la grille
-[2025-11-19 18:58:14] Power-up SlowDown appliqué à la pièce
-[2025-11-19 18:58:14] Nouvelle pièce générée
-[2025-11-19 18:58:15] Pièce état : MovingState
-[2025-11-19 19:06:30] Nouvelle pièce générée
-[2025-11-19 19:06:30] Jeu démarré
-[2025-11-19 19:06:30] Changement d'état : PlayingState
-[2025-11-19 19:06:30] Pièce état : MovingState
-[2025-11-19 19:06:32] Pièce tournée
-[2025-11-19 19:06:34] Pièce tournée
-[2025-11-19 19:06:35] Jeu en pause
-[2025-11-19 19:06:35] Changement d'état : PauseState
-[2025-11-19 19:06:44] Jeu repris
-[2025-11-19 19:06:44] Changement d'état : PlayingState
-[2025-11-19 19:06:48] Pièce tournée
-[2025-11-19 19:06:49] Pièce posée dans la grille
-[2025-11-19 19:06:49] Power-up SlowDown appliqué à la pièce
-[2025-11-19 19:06:49] Nouvelle pièce générée
-[2025-11-19 19:06:50] Pièce état : MovingState
-[2025-11-19 19:06:51] Jeu en pause
-[2025-11-19 19:06:51] Changement d'état : PauseState
-[2025-11-19 19:06:53] Jeu repris
-[2025-11-19 19:06:53] Changement d'état : PlayingState
-[2025-11-19 19:07:01] Pièce posée dans la grille
-[2025-11-19 19:07:01] Nouvelle pièce générée
-[2025-11-19 19:07:01] Pièce état : MovingState
-[2025-11-19 19:07:07] Pièce tournée
-[2025-11-19 19:07:08] Pièce posée dans la grille
-[2025-11-19 19:07:08] Nouvelle pièce générée
-[2025-11-19 19:07:08] Pièce état : MovingState
-[2025-11-19 19:07:12] Jeu en pause
-[2025-11-19 19:07:12] Changement d'état : PauseState
-[2025-11-19 19:25:14] Nouvelle pièce générée
-[2025-11-19 19:25:14] Jeu démarré
-[2025-11-19 19:25:14] Changement d'état : MenuState
-[2025-11-19 19:25:14] Pièce état : MovingState
-[2025-11-19 19:25:16] Pièce tournée
-[2025-11-19 19:25:22] Pièce tournée
-[2025-11-19 19:25:24] Pièce posée dans la grille
-[2025-11-19 19:25:24] Power-up SlowDown appliqué à la pièce
-[2025-11-19 19:25:24] Nouvelle pièce générée
-[2025-11-19 19:25:25] Pièce état : MovingState
-[2025-11-19 19:26:29] Nouvelle pièce générée
-[2025-11-19 19:26:29] Jeu démarré
-[2025-11-19 19:26:29] Changement d'état : PlayingState
-[2025-11-19 19:26:29] Changement d'état : MenuState
-[2025-11-19 19:26:29] Pièce état : MovingState
-[2025-11-19 19:28:12] Nouvelle pièce générée
-[2025-11-19 19:28:12] Jeu démarré
-[2025-11-19 19:28:12] Changement d'état : PlayingState
-[2025-11-19 19:28:13] Pièce état : MovingState
-[2025-11-19 19:28:16] Jeu en pause
-[2025-11-19 19:28:16] Changement d'état : PauseState
-[2025-11-19 19:28:23] Jeu repris
-[2025-11-19 19:28:23] Changement d'état : PlayingState
-[2025-11-19 19:28:29] Pièce posée dans la grille
-[2025-11-19 19:28:29] Nouvelle pièce générée
-[2025-11-19 19:28:30] Pièce état : MovingState
-[2025-11-19 19:28:37] Pièce posée dans la grille
-[2025-11-19 19:28:37] Power-up SlowDown appliqué à la pièce
-[2025-11-19 19:28:37] Nouvelle pièce générée
-[2025-11-19 19:28:38] Pièce état : MovingState
-[2025-11-19 19:28:38] Pièce tournée
-[2025-11-19 19:28:41] Jeu en pause
-[2025-11-19 19:28:41] Changement d'état : PauseState
-[2025-11-19 19:28:42] Jeu repris
-[2025-11-19 19:28:42] Changement d'état : PlayingState
+[2025-11-17 20:50:58] Nouvelle pièce générée
+[2025-11-17 20:50:58] Jeu démarré
+[2025-11-17 20:50:58] Pièce état : MovingState
+[2025-11-17 20:51:08] Pièce posée dans la grille
+[2025-11-17 20:51:08] Power-up SlowDown appliqué à la pièce
+[2025-11-17 20:51:08] Nouvelle pièce générée
+[2025-11-17 20:51:09] Pièce état : MovingState
+[2025-11-17 20:51:18] Pièce posée dans la grille
+[2025-11-17 20:51:18] Power-up SlowDown appliqué à la pièce
+[2025-11-17 20:51:18] Nouvelle pièce générée
+[2025-11-17 20:51:19] Pièce état : MovingState
+[2025-11-17 20:51:27] Pièce posée dans la grille
+[2025-11-17 20:51:27] Nouvelle pièce générée
+[2025-11-17 20:51:27] Pièce état : MovingState
+[2025-11-17 20:51:36] Pièce posée dans la grille
+[2025-11-17 20:51:36] Nouvelle pièce générée
+[2025-11-17 20:51:37] Pièce état : MovingState
+[2025-11-17 20:51:39] Jeu en pause
+[2025-11-17 20:51:40] Jeu repris
+[2025-11-18 14:11:20] Nouvelle pièce générée
+[2025-11-18 14:11:20] Jeu démarré
+[2025-11-18 14:11:20] Pièce état : MovingState
+[2025-11-18 14:11:23] Pièce tournée
+[2025-11-18 14:11:27] Pièce posée dans la grille
+[2025-11-18 14:11:27] Nouvelle pièce générée
+[2025-11-18 14:11:28] Pièce état : MovingState
+[2025-11-18 14:11:38] Pièce posée dans la grille
+[2025-11-18 14:11:38] Power-up SlowDown appliqué à la pièce
+[2025-11-18 14:11:38] Nouvelle pièce générée
+[2025-11-18 14:11:38] Pièce état : MovingState
+[2025-11-18 14:11:45] Pièce posée dans la grille
+[2025-11-18 14:11:45] Nouvelle pièce générée
+[2025-11-18 14:11:45] Pièce état : MovingState
+[2025-11-18 14:11:50] Pièce tournée
+[2025-11-18 14:11:54] Pièce posée dans la grille
+[2025-11-18 14:11:54] Nouvelle pièce générée
+[2025-11-18 14:11:54] Pièce état : MovingState
+[2025-11-18 14:12:03] Pièce posée dans la grille
+[2025-11-18 14:12:03] Nouvelle pièce générée
+[2025-11-18 14:12:04] Pièce état : MovingState
+[2025-11-18 14:12:08] Pièce posée dans la grille
+[2025-11-18 14:12:08] Power-up SlowDown appliqué à la pièce
+[2025-11-18 14:12:08] Nouvelle pièce générée
+[2025-11-18 14:12:09] Pièce état : MovingState
+[2025-11-18 14:12:13] Pièce tournée
+[2025-11-18 14:12:18] Pièce posée dans la grille
+[2025-11-18 14:12:18] Nouvelle pièce générée
+[2025-11-18 14:12:18] Pièce état : MovingState
+[2025-11-18 14:12:18] Pièce tournée
+[2025-11-18 14:12:26] Pièce posée dans la grille
+[2025-11-18 14:12:26] Nouvelle pièce générée
+[2025-11-18 14:12:27] Pièce état : MovingState
+[2025-11-18 14:12:29] Pièce tournée
+[2025-11-18 14:12:35] Pièce posée dans la grille
+[2025-11-18 14:12:35] Nouvelle pièce générée
+[2025-11-18 14:12:36] Pièce état : MovingState
+[2025-11-18 14:12:44] Pièce posée dans la grille
+[2025-11-18 14:12:44] Nouvelle pièce générée
+[2025-11-18 14:12:44] Pièce état : MovingState
+[2025-11-18 14:12:45] Pièce tournée
+[2025-11-18 14:12:45] Pièce tournée
+[2025-11-18 14:12:46] Pièce tournée
+[2025-11-18 14:12:47] Pièce tournée
+[2025-11-18 14:12:52] Pièce posée dans la grille
+[2025-11-18 14:12:52] Nouvelle pièce générée
+[2025-11-18 14:12:53] Pièce état : MovingState
+[2025-11-18 14:12:53] Pièce tournée
+[2025-11-18 14:12:54] Pièce tournée
+[2025-11-18 14:12:56] Pièce tournée
+[2025-11-18 14:13:00] Pièce posée dans la grille
+[2025-11-18 14:13:00] Nouvelle pièce générée
+[2025-11-18 14:13:01] Pièce état : MovingState
+[2025-11-18 14:13:01] Pièce tournée
+[2025-11-18 14:13:09] Pièce posée dans la grille
+[2025-11-18 14:13:09] Lignes complétées: 1
+[2025-11-18 14:13:09] Nouvelle pièce générée
+[2025-11-18 14:13:10] Pièce état : MovingState
+[2025-11-18 14:13:11] Pièce tournée
+[2025-11-18 14:13:12] Pièce tournée
+[2025-11-18 14:13:18] Pièce posée dans la grille
+[2025-11-18 14:13:18] Power-up SlowDown appliqué à la pièce
+[2025-11-18 14:13:18] Nouvelle pièce générée
+[2025-11-18 14:13:19] Pièce état : MovingState
+[2025-11-18 14:13:20] Pièce tournée
+[2025-11-18 14:13:26] Pièce posée dans la grille
+[2025-11-18 14:13:26] Nouvelle pièce générée
+[2025-11-18 14:13:26] Pièce état : MovingState
+[2025-11-18 14:13:29] Switching to: PauseState
+[2025-11-18 14:13:49] Nouvelle pièce générée
+[2025-11-18 14:13:49] Jeu démarré
+[2025-11-18 14:13:49] Pièce état : MovingState
+[2025-11-18 14:13:52] Switching to: PauseState
+[2025-11-18 14:13:53] Switching to: PauseState
+[2025-11-18 14:13:53] Switching to: PauseState
+[2025-11-18 14:13:57] Switching to: PauseState
+[2025-11-18 14:14:25] Nouvelle pièce générée
+[2025-11-18 14:14:25] Jeu démarré
+[2025-11-18 14:14:25] Pièce état : MovingState
+[2025-11-18 14:14:28] Pièce posée dans la grille
+[2025-11-18 14:14:28] Nouvelle pièce générée
+[2025-11-18 14:14:28] Pièce état : MovingState
+[2025-11-18 14:14:29] Pièce posée dans la grille
+[2025-11-18 14:14:29] Nouvelle pièce générée
+[2025-11-18 14:14:29] Pièce état : MovingState
+[2025-11-18 14:14:30] Pièce posée dans la grille
+[2025-11-18 14:14:30] Power-up SlowDown appliqué à la pièce
+[2025-11-18 14:14:30] Nouvelle pièce générée
+[2025-11-18 14:14:31] Pièce état : MovingState
+[2025-11-18 14:14:31] Pièce posée dans la grille
+[2025-11-18 14:14:31] Nouvelle pièce générée
+[2025-11-18 14:14:31] Pièce état : MovingState
+[2025-11-18 14:14:32] Pièce posée dans la grille
+[2025-11-18 14:14:32] Nouvelle pièce générée
+[2025-11-18 14:14:32] Pièce état : MovingState
+[2025-11-18 14:14:33] Pièce posée dans la grille
+[2025-11-18 14:14:33] Nouvelle pièce générée
+[2025-11-18 14:14:33] Pièce état : MovingState
+[2025-11-18 14:14:34] Pièce posée dans la grille
+[2025-11-18 14:14:34] Power-up SlowDown appliqué à la pièce
+[2025-11-18 14:14:34] Nouvelle pièce générée
+[2025-11-18 14:14:35] Pièce état : MovingState
+[2025-11-18 14:14:35] Pièce posée dans la grille
+[2025-11-18 14:14:35] Power-up SlowDown appliqué à la pièce
+[2025-11-18 14:14:35] Nouvelle pièce générée
+[2025-11-18 14:14:36] Pièce état : MovingState
+[2025-11-18 14:14:36] Pièce posée dans la grille
+[2025-11-18 14:14:36] Nouvelle pièce générée
+[2025-11-18 14:14:36] Pièce état : MovingState
+[2025-11-18 14:14:37] Pièce posée dans la grille
+[2025-11-18 14:14:37] Power-up SlowDown appliqué à la pièce
+[2025-11-18 14:14:37] Nouvelle pièce générée
+[2025-11-18 14:14:37] Game Over
+[2025-11-18 14:14:37] Switching to: GameOverState
+[2025-11-18 14:50:29] New piece spawned
+[2025-11-18 14:50:30] Pièce état : MovingState
+[2025-11-18 14:50:40] Power-up SlowDown appliqué à la pièce
+[2025-11-18 14:50:40] New piece spawned
+[2025-11-18 14:50:41] Pièce état : MovingState
+[2025-11-18 14:51:08] New piece spawned
+[2025-11-18 14:51:08] Pièce état : MovingState
+[2025-11-18 14:51:24] Power-up SlowDown appliqué à la pièce
+[2025-11-18 14:51:24] New piece spawned
+[2025-11-18 14:51:25] Pièce état : MovingState
+[2025-11-18 14:51:44] New piece spawned
+[2025-11-18 14:51:44] Pièce état : MovingState
+[2025-11-18 15:39:17] New piece spawned
+[2025-11-18 15:39:17] Pièce état : MovingState
+[2025-11-18 15:39:21] Pièce tournée
+[2025-11-18 15:40:19] Power-up SlowDown appliqué à la pièce
+[2025-11-18 15:40:19] New piece spawned
+[2025-11-18 15:40:19] Pièce état : MovingState
+[2025-11-18 15:40:30] Power-up SlowDown appliqué à la pièce
+[2025-11-18 15:40:30] New piece spawned
+[2025-11-18 15:40:31] Pièce état : MovingState
+[2025-11-18 15:44:53] New piece spawned
+[2025-11-18 15:45:02] New piece spawned
+[2025-11-18 15:45:05] New piece spawned
+[2025-11-18 15:45:07] New piece spawned
+[2025-11-18 15:45:14] Power-up SlowDown appliqué à la pièce
+[2025-11-18 15:45:14] New piece spawned
+[2025-11-18 15:45:33] New piece spawned
+[2025-11-18 15:45:40] Power-up SlowDown appliqué à la pièce
+[2025-11-18 15:45:40] New piece spawned
+[2025-11-18 15:45:46] New piece spawned
+[2025-11-18 15:49:29] New piece spawned
+[2025-11-18 15:49:39] New piece spawned
+[2025-11-18 15:49:43] Power-up SlowDown appliqué à la pièce
+[2025-11-18 15:49:43] New piece spawned
+[2025-11-18 15:49:45] New piece spawned
+[2025-11-18 15:49:48] New piece spawned
+[2025-11-18 15:49:49] New piece spawned
+[2025-11-18 15:49:50] New piece spawned
+[2025-11-18 15:49:51] New piece spawned
+[2025-11-18 15:49:51] New piece spawned
+[2025-11-18 15:49:52] New piece spawned
+[2025-11-18 15:49:52] New piece spawned
+[2025-11-18 15:49:53] New piece spawned
+[2025-11-18 15:49:53] Power-up SlowDown appliqué à la pièce
+[2025-11-18 15:49:53] New piece spawned
+[2025-11-18 15:51:13] New piece spawned
+[2025-11-18 15:51:14] Pièce état : MovingState
+[2025-11-18 15:51:19] Power-up SlowDown appliqué à la pièce
+[2025-11-18 15:51:19] New piece spawned
+[2025-11-18 15:51:20] Pièce état : MovingState
+[2025-11-18 15:51:22] New piece spawned
+[2025-11-18 15:51:22] Pièce état : MovingState
+[2025-11-18 15:51:25] New piece spawned
+[2025-11-18 15:51:26] Pièce état : MovingState
+[2025-11-18 15:51:27] New piece spawned
+[2025-11-18 15:51:27] Pièce état : MovingState
+[2025-11-18 15:51:28] New piece spawned
+[2025-11-18 15:51:29] Pièce état : MovingState
+[2025-11-18 15:51:29] Power-up SlowDown appliqué à la pièce
+[2025-11-18 15:51:29] New piece spawned
+[2025-11-18 15:51:30] Pièce état : MovingState
+[2025-11-18 15:51:31] New piece spawned
+[2025-11-18 15:51:32] Pièce état : MovingState
+[2025-11-18 15:51:32] New piece spawned
+[2025-11-18 15:51:33] Pièce état : MovingState
+[2025-11-18 15:51:33] New piece spawned
+[2025-11-18 15:51:34] Pièce état : MovingState
+[2025-11-18 15:51:34] New piece spawned
+[2025-11-18 15:51:35] Pièce état : MovingState
+[2025-11-18 15:51:35] New piece spawned
+[2025-11-18 15:51:39] New piece spawned
+[2025-11-18 15:51:40] Pièce état : MovingState
+[2025-11-18 15:51:59] New piece spawned
+[2025-11-18 15:51:59] Pièce état : MovingState
+[2025-11-18 15:52:08] Power-up SlowDown appliqué à la pièce
+[2025-11-18 15:52:08] New piece spawned
+[2025-11-18 15:52:09] Pièce état : MovingState
+[2025-11-18 15:52:18] Pièce tournée
+[2025-11-18 15:52:18] New piece spawned
+[2025-11-18 15:52:18] Pièce état : MovingState
+[2025-11-18 15:52:19] Pièce tournée
+[2025-11-18 15:52:20] Pièce tournée
+[2025-11-18 15:52:27] Pièce tournée
+[2025-11-18 15:52:28] New piece spawned
+[2025-11-18 15:52:29] Pièce état : MovingState
+[2025-11-18 15:52:38] New piece spawned
+[2025-11-18 15:54:22] New piece spawned
+[2025-11-18 15:54:23] Pièce état : MovingState
+[2025-11-18 15:54:28] Pièce tournée
+[2025-11-18 15:54:29] Pièce tournée
+[2025-11-18 15:54:29] New piece spawned
+[2025-11-18 15:54:29] Pièce état : MovingState
+[2025-11-18 15:55:40] Power-up SlowDown appliqué à la pièce
+[2025-11-18 15:55:40] New piece spawned
+[2025-11-18 15:55:41] Pièce état : MovingState
+[2025-11-18 15:57:13] New piece spawned
+[2025-11-18 15:57:13] Pièce état : MovingState
+[2025-11-18 15:57:19] New piece spawned
+[2025-11-18 15:57:20] Pièce état : MovingState
+[2025-11-18 15:57:27] New piece spawned
+[2025-11-18 15:57:28] Pièce état : MovingState
+[2025-11-18 15:57:29] New piece spawned
+[2025-11-18 15:57:29] Pièce état : MovingState
+[2025-11-18 15:57:30] New piece spawned
+[2025-11-18 15:57:31] Pièce état : MovingState
+[2025-11-18 15:57:32] New piece spawned
+[2025-11-18 15:57:32] Pièce état : MovingState
+[2025-11-18 15:57:33] New piece spawned
+[2025-11-18 15:57:34] Pièce état : MovingState
+[2025-11-18 15:57:34] New piece spawned
+[2025-11-18 15:57:35] Pièce état : MovingState
+[2025-11-18 15:57:35] New piece spawned
+[2025-11-18 15:57:36] Pièce état : MovingState
+[2025-11-18 15:57:36] New piece spawned
+[2025-11-18 15:57:37] Pièce état : MovingState
+[2025-11-18 15:57:37] New piece spawned
+[2025-11-18 15:57:38] Pièce état : MovingState
+[2025-11-18 15:57:38] New piece spawned
+[2025-11-18 15:57:43] New piece spawned
+[2025-11-18 15:57:43] Pièce état : MovingState
+[2025-11-18 15:57:49] Power-up SlowDown appliqué à la pièce
+[2025-11-18 15:57:49] New piece spawned
+[2025-11-18 15:57:49] Pièce état : MovingState
+[2025-11-18 15:58:00] New piece spawned
+[2025-11-18 15:58:00] Pièce état : MovingState
+[2025-11-18 16:02:57] Power-up SlowDown appliqué à la pièce
+[2025-11-18 16:02:57] New piece spawned
+[2025-11-18 16:02:58] Pièce état : MovingState
+[2025-11-18 16:03:31] Power-up SlowDown appliqué à la pièce
+[2025-11-18 16:03:31] New piece spawned
+[2025-11-18 16:03:32] Pièce état : MovingState
+[2025-11-18 16:03:41] New piece spawned
+[2025-11-18 16:03:43] Pièce état : MovingState
+[2025-11-18 16:04:17] New piece spawned
+[2025-11-18 16:04:17] Pièce état : MovingState
+[2025-11-18 16:04:27] New piece spawned
+[2025-11-18 16:04:28] Pièce état : MovingState
+[2025-11-18 16:04:38] New piece spawned
+[2025-11-18 16:04:38] Pièce état : MovingState
+[2025-11-18 16:06:31] New piece spawned
+[2025-11-18 16:06:32] Pièce état : MovingState
+[2025-11-18 16:06:50] New piece spawned
+[2025-11-18 16:06:50] Pièce état : MovingState
+[2025-11-18 16:06:55] Pièce tournée
+[2025-11-18 16:07:13] Power-up SlowDown appliqué à la pièce
+[2025-11-18 16:07:13] New piece spawned
+[2025-11-18 16:07:14] Pièce état : MovingState
+[2025-11-18 16:07:28] New piece spawned
+[2025-11-18 16:07:39] New piece spawned
+[2025-11-18 16:07:39] Pièce état : MovingState
+[2025-11-18 16:07:44] Pièce tournée
+[2025-11-18 16:07:44] Pièce tournée
+[2025-11-18 16:07:44] Pièce tournée
+[2025-11-18 16:07:45] Pièce tournée
+[2025-11-18 16:07:45] Pièce tournée
+[2025-11-18 16:07:46] Pièce tournée
+[2025-11-18 16:07:46] Pièce tournée
+[2025-11-18 16:07:47] Pièce tournée
+[2025-11-18 16:07:47] New piece spawned
+[2025-11-18 16:07:48] Pièce état : MovingState
+[2025-11-18 16:09:37] Power-up SlowDown appliqué à la pièce
+[2025-11-18 16:09:37] New piece spawned
+[2025-11-18 16:09:38] Pièce état : MovingState
+[2025-11-18 16:09:49] Power-up SlowDown appliqué à la pièce
+[2025-11-18 16:09:49] New piece spawned
+[2025-11-18 16:09:50] Pièce état : MovingState
+[2025-11-18 16:12:59] Power-up SlowDown appliqué à la pièce
+[2025-11-18 16:12:59] New piece spawned
+[2025-11-18 16:12:59] Pièce état : MovingState
+[2025-11-18 16:13:09] New piece spawned
+[2025-11-18 16:13:09] Pièce état : MovingState
+[2025-11-18 16:13:20] New piece spawned
+[2025-11-18 16:13:21] Pièce état : MovingState
+[2025-11-18 16:13:23] New piece spawned
+[2025-11-18 16:13:23] Pièce état : MovingState
+[2025-11-18 16:13:25] Pièce tournée
+[2025-11-18 16:13:26] Pièce tournée
+[2025-11-18 16:13:26] Pièce tournée
+[2025-11-18 16:13:26] Power-up SlowDown appliqué à la pièce
+[2025-11-18 16:13:26] New piece spawned
+[2025-11-18 16:13:27] Pièce état : MovingState
+[2025-11-18 16:13:27] Pièce tournée
+[2025-11-18 16:13:28] Pièce tournée
+[2025-11-18 16:13:29] Pièce tournée
+[2025-11-18 16:13:29] Pièce tournée
+[2025-11-18 16:13:29] Pièce tournée
+[2025-11-18 16:13:30] Pièce tournée
+[2025-11-18 16:13:31] Pièce tournée
+[2025-11-18 16:13:32] Pièce tournée
+[2025-11-18 16:13:38] New piece spawned
+[2025-11-18 16:13:38] Pièce état : MovingState
+[2025-11-18 16:13:53] New piece spawned
+[2025-11-18 16:13:53] Pièce état : MovingState
+[2025-11-18 16:13:54] Pièce tournée
+[2025-11-18 16:13:55] Pièce tournée
+[2025-11-18 16:13:55] Pièce tournée
+[2025-11-18 16:13:56] Pièce tournée
+[2025-11-18 16:13:56] Pièce tournée
+[2025-11-18 16:13:56] Pièce tournée
+[2025-11-18 16:13:57] Pièce tournée
+[2025-11-18 16:14:05] New piece spawned
+[2025-11-18 16:14:05] Pièce état : MovingState
+[2025-11-18 16:14:06] Pièce tournée
+[2025-11-18 16:14:06] Pièce tournée
+[2025-11-18 16:14:06] Pièce tournée
+[2025-11-18 16:14:07] Pièce tournée
+[2025-11-18 16:14:07] Pièce tournée
+[2025-11-18 16:14:08] Pièce tournée
+[2025-11-18 16:14:08] Pièce tournée
+[2025-11-18 16:14:10] New piece spawned
+[2025-11-18 16:14:11] Pièce état : MovingState
+[2025-11-18 16:14:11] Pièce tournée
+[2025-11-18 16:14:11] Pièce tournée
+[2025-11-18 16:14:12] Pièce tournée
+[2025-11-18 16:14:12] Pièce tournée
+[2025-11-18 16:14:12] Pièce tournée
+[2025-11-18 16:14:13] Pièce tournée
+[2025-11-18 16:14:14] Pièce tournée
+[2025-11-18 16:14:14] Pièce tournée
+[2025-11-18 16:14:14] Pièce tournée
+[2025-11-18 16:14:15] Pièce tournée
+[2025-11-18 16:14:15] Pièce tournée
+[2025-11-18 16:14:16] Power-up SlowDown appliqué à la pièce
+[2025-11-18 16:14:16] New piece spawned
+[2025-11-18 16:14:17] Pièce état : MovingState
+[2025-11-18 16:14:17] Pièce tournée
+[2025-11-18 16:14:18] Pièce tournée
+[2025-11-18 16:14:18] Pièce tournée
+[2025-11-18 16:14:18] Pièce tournée
+[2025-11-18 16:14:19] Pièce tournée
+[2025-11-18 16:14:19] Pièce tournée
+[2025-11-18 16:14:22] Pièce tournée
+[2025-11-18 16:14:23] Pièce tournée
+[2025-11-18 16:14:23] Pièce tournée
+[2025-11-18 16:14:24] New piece spawned
+[2025-11-18 16:14:24] Pièce état : MovingState
+[2025-11-18 16:14:25] Pièce tournée
+[2025-11-18 16:14:26] Pièce tournée
+[2025-11-18 16:14:26] Pièce tournée
+[2025-11-18 16:14:28] New piece spawned
+[2025-11-18 16:14:29] Pièce état : MovingState
+[2025-11-18 16:14:31] New piece spawned
+[2025-11-18 16:14:31] Pièce état : MovingState
+[2025-11-18 16:14:32] New piece spawned
+[2025-11-18 16:14:33] Pièce état : MovingState
+[2025-11-18 16:14:34] Power-up SlowDown appliqué à la pièce
+[2025-11-18 16:14:34] New piece spawned
+[2025-11-18 16:14:34] Pièce état : MovingState
+[2025-11-18 16:14:35] New piece spawned
+[2025-11-18 16:14:36] Pièce état : MovingState
+[2025-11-18 16:14:36] New piece spawned
+[2025-11-18 16:14:37] Pièce état : MovingState
+[2025-11-18 16:14:37] New piece spawned
+[2025-11-18 16:14:38] Pièce état : MovingState
+[2025-11-18 16:14:38] New piece spawned
+[2025-11-18 16:14:39] Pièce état : MovingState
+[2025-11-18 16:14:39] Power-up SlowDown appliqué à la pièce
+[2025-11-18 16:14:39] New piece spawned
+[2025-11-18 16:14:40] Pièce état : MovingState
+[2025-11-18 16:14:40] Power-up SlowDown appliqué à la pièce
+[2025-11-18 16:14:40] New piece spawned
+[2025-11-18 16:14:46] Power-up SlowDown appliqué à la pièce
+[2025-11-18 16:14:46] New piece spawned
+[2025-11-18 16:14:46] Pièce état : MovingState
+[2025-11-18 16:14:57] New piece spawned
+[2025-11-18 16:14:57] Pièce état : MovingState
+[2025-11-18 16:15:02] New piece spawned
+[2025-11-18 16:15:03] Pièce état : MovingState
+[2025-11-18 16:15:17] New piece spawned
+[2025-11-18 16:15:17] Pièce état : MovingState
+[2025-11-18 16:20:42] New piece spawned
+[2025-11-18 16:20:42] Pièce état : MovingState
+[2025-11-18 16:20:44] Pièce tournée
+[2025-11-18 16:20:44] Pièce tournée
+[2025-11-18 16:20:44] Pièce tournée
+[2025-11-18 16:20:45] Pièce tournée
+[2025-11-18 16:20:47] Pièce tournée
+[2025-11-18 16:20:48] Pièce tournée
+[2025-11-18 16:20:48] Pièce tournée
+[2025-11-18 16:20:49] Pièce tournée
+[2025-11-18 16:20:50] Pièce tournée
+[2025-11-18 16:20:52] New piece spawned
+[2025-11-18 16:20:52] Pièce état : MovingState
+[2025-11-18 16:20:55] Pièce tournée
+[2025-11-18 16:20:55] Pièce tournée
+[2025-11-18 16:20:56] Pièce tournée
+[2025-11-18 16:20:56] Pièce tournée
+[2025-11-18 16:20:56] Pièce tournée
+[2025-11-18 16:20:57] Pièce tournée
+[2025-11-18 16:20:58] Pièce tournée
+[2025-11-18 16:21:00] Power-up SlowDown appliqué à la pièce
+[2025-11-18 16:21:00] New piece spawned
+[2025-11-18 16:21:00] Pièce état : MovingState
+[2025-11-18 16:21:00] Pièce tournée
+[2025-11-18 16:21:01] Pièce tournée
+[2025-11-18 16:21:02] Pièce tournée
+[2025-11-18 16:21:02] Pièce tournée
+[2025-11-18 16:21:02] Pièce tournée
+[2025-11-18 16:21:02] Pièce tournée
+[2025-11-18 16:21:10] Power-up SlowDown appliqué à la pièce
+[2025-11-18 16:21:10] New piece spawned
+[2025-11-18 16:21:11] Pièce état : MovingState
+[2025-11-18 16:21:14] Pièce tournée
+[2025-11-18 16:21:16] Pièce tournée
+[2025-11-18 16:21:19] Pièce tournée
+[2025-11-18 16:21:20] New piece spawned
+[2025-11-18 16:21:20] Pièce état : MovingState
+[2025-11-18 16:21:23] Pièce tournée
+[2025-11-18 16:22:08] Power-up SlowDown appliqué à la pièce
+[2025-11-18 16:22:08] New piece spawned
+[2025-11-18 16:22:09] Pièce état : MovingState
+[2025-11-18 16:22:18] New piece spawned
+[2025-11-18 16:22:18] Pièce état : MovingState
+[2025-11-18 16:22:29] New piece spawned
+[2025-11-18 16:22:29] Pièce état : MovingState
+[2025-11-18 16:22:37] Pièce tournée
+[2025-11-18 16:22:37] Pièce tournée
+[2025-11-18 16:22:38] Pièce tournée
+[2025-11-18 16:22:39] Power-up SlowDown appliqué à la pièce
+[2025-11-18 16:22:39] New piece spawned
+[2025-11-18 16:22:39] Pièce état : MovingState
+[2025-11-18 16:22:41] Pièce tournée
+[2025-11-18 16:22:43] Pièce tournée
+[2025-11-18 16:22:43] Pièce tournée
+[2025-11-18 16:22:43] Pièce tournée
+[2025-11-18 16:22:44] Pièce tournée
+[2025-11-18 16:22:45] Pièce tournée
+[2025-11-18 16:22:47] New piece spawned
+[2025-11-18 16:22:47] Pièce état : MovingState
+[2025-11-18 16:22:48] Power-up SlowDown appliqué à la pièce
+[2025-11-18 16:22:48] New piece spawned
+[2025-11-18 16:22:49] Pièce état : MovingState
+[2025-11-18 16:22:51] Power-up SlowDown appliqué à la pièce
+[2025-11-18 16:22:51] New piece spawned
+[2025-11-18 16:22:52] Pièce état : MovingState
+[2025-11-18 16:22:54] New piece spawned
+[2025-11-18 16:22:54] Pièce état : MovingState
+[2025-11-18 16:22:55] New piece spawned
+[2025-11-18 16:22:56] Pièce état : MovingState
+[2025-11-18 16:22:56] New piece spawned
+[2025-11-18 16:22:57] Pièce état : MovingState
+[2025-11-18 16:22:57] New piece spawned
+[2025-11-18 16:22:58] Pièce état : MovingState
+[2025-11-18 16:22:58] New piece spawned
+[2025-11-18 16:22:59] Pièce état : MovingState
+[2025-11-18 16:22:59] New piece spawned
+[2025-11-18 16:23:00] Pièce état : MovingState
+[2025-11-18 16:23:00] Power-up SlowDown appliqué à la pièce
+[2025-11-18 16:23:00] New piece spawned
+[2025-11-18 16:23:01] Pièce état : MovingState
+[2025-11-18 16:23:02] New piece spawned
+[2025-11-18 16:23:02] Pièce état : MovingState
+[2025-11-18 16:23:02] Power-up SlowDown appliqué à la pièce
+[2025-11-18 16:23:02] New piece spawned
+[2025-11-18 16:27:26] New piece spawned
+[2025-11-18 16:27:27] Pièce état : MovingState
+[2025-11-18 16:27:32] Pièce tournée
+[2025-11-18 16:27:32] Pièce tournée
+[2025-11-18 16:27:33] Pièce tournée
+[2025-11-18 16:27:35] New piece spawned
+[2025-11-18 16:27:35] Pièce état : MovingState
+[2025-11-18 16:27:35] Pièce tournée
+[2025-11-18 16:27:36] Pièce tournée
+[2025-11-18 16:27:36] Pièce tournée
+[2025-11-18 16:27:38] New piece spawned
+[2025-11-18 16:27:39] Pièce état : MovingState
+[2025-11-18 16:27:39] Pièce tournée
+[2025-11-18 16:27:41] Power-up SlowDown appliqué à la pièce
+[2025-11-18 16:27:41] New piece spawned
+[2025-11-18 16:27:42] Pièce état : MovingState
+[2025-11-18 16:27:42] Pièce tournée
+[2025-11-18 16:27:45] Power-up SlowDown appliqué à la pièce
+[2025-11-18 16:27:45] New piece spawned
+[2025-11-18 16:27:45] Pièce état : MovingState
+[2025-11-18 16:27:46] Pièce tournée
+[2025-11-18 16:27:46] Pièce tournée
+[2025-11-18 16:27:47] Pièce tournée
+[2025-11-18 16:27:47] Pièce tournée
+[2025-11-18 16:27:47] Pièce tournée
+[2025-11-18 16:27:48] Pièce tournée
+[2025-11-18 16:27:50] New piece spawned
+[2025-11-18 16:27:50] Pièce état : MovingState
+[2025-11-18 16:27:51] Pièce tournée
+[2025-11-18 16:27:53] New piece spawned
+[2025-11-18 16:27:53] Pièce état : MovingState
+[2025-11-18 16:27:53] Pièce tournée
+[2025-11-18 16:27:54] Pièce tournée
+[2025-11-18 16:27:56] Power-up SlowDown appliqué à la pièce
+[2025-11-18 16:27:56] New piece spawned
+[2025-11-18 16:27:57] Pièce état : MovingState
+[2025-11-18 16:27:58] Pièce tournée
+[2025-11-18 16:27:58] Pièce tournée
+[2025-11-18 16:27:58] Pièce tournée
+[2025-11-18 16:28:02] New piece spawned
+[2025-11-18 16:28:02] Pièce état : MovingState
+[2025-11-18 16:28:05] Power-up SlowDown appliqué à la pièce
+[2025-11-18 16:28:05] New piece spawned
+[2025-11-18 16:28:06] Pièce état : MovingState
+[2025-11-18 16:28:06] Pièce tournée
+[2025-11-18 16:28:06] Pièce tournée
+[2025-11-18 16:28:07] Pièce tournée
+[2025-11-18 16:28:09] New piece spawned
+[2025-11-18 16:28:09] Pièce état : MovingState
+[2025-11-18 16:28:10] Pièce tournée
+[2025-11-18 16:28:12] Pièce tournée
+[2025-11-18 16:28:12] New piece spawned
+[2025-11-18 16:28:13] Pièce état : MovingState
+[2025-11-18 16:28:13] Pièce tournée
+[2025-11-18 16:28:14] Pièce tournée
+[2025-11-18 16:28:14] Pièce tournée
+[2025-11-18 16:28:16] Power-up SlowDown appliqué à la pièce
+[2025-11-18 16:28:16] New piece spawned
+[2025-11-18 16:28:17] Pièce état : MovingState
+[2025-11-18 16:28:17] Pièce tournée
+[2025-11-18 16:28:18] Pièce tournée
+[2025-11-18 16:28:19] New piece spawned
+[2025-11-18 16:28:19] Pièce état : MovingState
+[2025-11-18 16:28:22] New piece spawned
+[2025-11-18 16:28:22] Pièce état : MovingState
+[2025-11-18 16:28:23] Pièce tournée
+[2025-11-18 16:28:23] Pièce tournée
+[2025-11-18 16:28:24] Pièce tournée
+[2025-11-18 16:28:25] Power-up SlowDown appliqué à la pièce
+[2025-11-18 16:28:25] New piece spawned
+[2025-11-18 16:28:26] Pièce état : MovingState
+[2025-11-18 16:28:27] Pièce tournée
+[2025-11-18 16:28:27] Pièce tournée
+[2025-11-18 16:28:28] Pièce tournée
+[2025-11-18 16:28:28] Pièce tournée
+[2025-11-18 16:28:29] Pièce tournée
+[2025-11-18 16:28:29] Pièce tournée
+[2025-11-18 16:28:29] Pièce tournée
+[2025-11-18 16:28:30] New piece spawned
+[2025-11-18 16:28:30] Pièce état : MovingState
+[2025-11-18 16:28:32] New piece spawned
+[2025-11-18 16:28:33] Pièce état : MovingState
+[2025-11-18 16:28:33] Pièce tournée
+[2025-11-18 16:28:33] Pièce tournée
+[2025-11-18 16:28:33] Pièce tournée
+[2025-11-18 16:28:38] Pièce tournée
+[2025-11-18 16:28:39] Pièce tournée
+[2025-11-18 16:28:40] Power-up SlowDown appliqué à la pièce
+[2025-11-18 16:28:40] New piece spawned
+[2025-11-18 16:28:41] Pièce état : MovingState
+[2025-11-18 16:28:44] New piece spawned
+[2025-11-18 16:28:44] Pièce état : MovingState
+[2025-11-18 16:28:45] Pièce tournée
+[2025-11-18 16:28:45] Pièce tournée
+[2025-11-18 16:28:46] Pièce tournée
+[2025-11-18 16:28:47] New piece spawned
+[2025-11-18 16:28:47] Pièce état : MovingState
+[2025-11-18 16:28:48] New piece spawned
+[2025-11-18 16:28:49] Pièce état : MovingState
+[2025-11-18 16:28:52] New piece spawned
+[2025-11-18 16:28:52] Pièce état : MovingState
+[2025-11-18 16:28:55] New piece spawned
+[2025-11-18 16:28:56] Pièce état : MovingState
+[2025-11-18 16:28:59] Pièce tournée
+[2025-11-18 16:29:01] New piece spawned
+[2025-11-18 16:29:02] Pièce état : MovingState
+[2025-11-18 16:29:35] New piece spawned
+[2025-11-18 16:29:36] Pièce état : MovingState
+[2025-11-18 16:29:39] Pièce tournée
+[2025-11-18 16:29:39] Pièce tournée
+[2025-11-18 16:29:44] New piece spawned
+[2025-11-18 16:29:47] Pièce état : MovingState
+[2025-11-18 16:29:49] Pièce tournée
+[2025-11-18 16:29:50] Pièce tournée
+[2025-11-18 16:29:52] Pièce tournée
+[2025-11-18 16:29:53] Pièce tournée
+[2025-11-18 16:30:09] New piece spawned
+[2025-11-18 16:30:10] Pièce état : MovingState
+[2025-11-18 16:30:13] Pièce tournée
+[2025-11-18 16:30:15] New piece spawned
+[2025-11-18 16:30:15] Pièce état : MovingState
+[2025-11-18 16:30:16] Pièce tournée
+[2025-11-18 16:30:16] Pièce tournée
+[2025-11-18 16:30:17] Pièce tournée
+[2025-11-18 16:30:18] Pièce tournée
+[2025-11-18 16:30:19] New piece spawned
+[2025-11-18 16:30:19] Pièce état : MovingState
+[2025-11-18 16:30:21] Pièce tournée
+[2025-11-18 16:30:22] Pièce tournée
+[2025-11-18 16:30:25] New piece spawned
+[2025-11-18 16:30:25] Pièce état : MovingState
+[2025-11-18 16:30:26] Pièce tournée
+[2025-11-18 16:30:26] Pièce tournée
+[2025-11-18 16:30:28] Pièce tournée
+[2025-11-18 16:30:28] Pièce tournée
+[2025-11-18 16:30:29] Pièce tournée
+[2025-11-18 16:30:31] New piece spawned
+[2025-11-18 16:30:31] Pièce état : MovingState
+[2025-11-18 16:30:31] Pièce tournée
+[2025-11-18 16:30:33] New piece spawned
+[2025-11-18 16:30:34] Pièce état : MovingState
+[2025-11-18 16:30:34] Pièce tournée
+[2025-11-18 16:30:35] Pièce tournée
+[2025-11-18 16:30:35] Pièce tournée
+[2025-11-18 16:30:38] New piece spawned
+[2025-11-18 16:30:38] Pièce état : MovingState
+[2025-11-18 16:30:38] Pièce tournée
+[2025-11-18 16:30:39] Pièce tournée
+[2025-11-18 16:30:39] Pièce tournée
+[2025-11-18 16:30:40] Pièce tournée
+[2025-11-18 16:30:42] Pièce tournée
+[2025-11-18 16:30:42] Pièce tournée
+[2025-11-18 16:30:43] Pièce tournée
+[2025-11-18 16:30:44] Pièce tournée
+[2025-11-18 16:30:45] New piece spawned
+[2025-11-18 16:30:46] Pièce état : MovingState
+[2025-11-18 16:30:46] Pièce tournée
+[2025-11-18 16:30:47] Pièce tournée
+[2025-11-18 16:30:47] Pièce tournée
+[2025-11-18 16:30:48] Pièce tournée
+[2025-11-18 16:30:49] Pièce tournée
+[2025-11-18 16:30:50] Pièce tournée
+[2025-11-18 16:30:50] Pièce tournée
+[2025-11-18 16:30:51] Pièce tournée
+[2025-11-18 16:30:51] Pièce tournée
+[2025-11-18 16:30:53] New piece spawned
+[2025-11-18 16:30:53] Pièce état : MovingState
+[2025-11-18 16:30:54] Pièce tournée
+[2025-11-18 16:30:54] Pièce tournée
+[2025-11-18 16:30:57] New piece spawned
+[2025-11-18 16:30:57] Pièce état : MovingState
+[2025-11-18 16:30:59] New piece spawned
+[2025-11-18 16:30:59] Pièce état : MovingState
+[2025-11-18 16:31:00] New piece spawned
+[2025-11-18 16:31:01] Pièce état : MovingState
+[2025-11-18 16:31:02] New piece spawned
+[2025-11-18 16:31:02] Pièce état : MovingState
+[2025-11-18 16:31:03] New piece spawned
+[2025-11-18 16:31:04] Pièce état : MovingState
+[2025-11-18 16:31:05] New piece spawned
+[2025-11-18 16:31:05] Pièce état : MovingState
+[2025-11-18 16:31:06] New piece spawned
+[2025-11-18 16:31:07] Pièce état : MovingState
+[2025-11-18 16:31:08] Power-up SlowDown appliqué à la pièce
+[2025-11-18 16:31:08] New piece spawned
+[2025-11-18 16:31:09] Pièce état : MovingState
+[2025-11-18 16:31:10] New piece spawned
+[2025-11-18 16:31:10] Pièce état : MovingState
+[2025-11-18 16:31:10] New piece spawned
+[2025-11-18 16:31:11] Pièce état : MovingState
+[2025-11-18 16:31:12] New piece spawned
+[2025-11-18 16:31:12] Pièce état : MovingState
+[2025-11-18 16:31:13] New piece spawned
+[2025-11-18 16:31:17] New piece spawned
+[2025-11-18 16:31:18] Pièce état : MovingState
+[2025-11-18 16:36:21] New piece spawned
+[2025-11-18 16:36:22] Pièce état : MovingState
+[2025-11-18 16:36:34] New piece spawned
+[2025-11-18 16:36:35] Pièce état : MovingState
+[2025-11-18 16:36:37] Power-up SlowDown appliqué à la pièce
+[2025-11-18 16:36:37] New piece spawned
+[2025-11-18 16:36:37] Pièce état : MovingState
+[2025-11-18 16:36:40] New piece spawned
+[2025-11-18 16:36:40] Pièce état : MovingState
+[2025-11-18 16:36:41] New piece spawned
+[2025-11-18 16:36:42] Pièce état : MovingState
+[2025-11-18 16:36:43] New piece spawned
+[2025-11-18 16:36:43] Pièce état : MovingState
+[2025-11-18 16:36:44] New piece spawned
+[2025-11-18 16:36:44] Pièce état : MovingState
+[2025-11-18 16:36:45] New piece spawned
+[2025-11-18 16:36:45] Pièce état : MovingState
+[2025-11-18 16:36:48] New piece spawned
+[2025-11-18 16:36:49] Pièce état : MovingState
+[2025-11-18 16:37:00] New piece spawned
+[2025-11-18 16:37:01] Pièce état : MovingState
+[2025-11-18 16:37:08] New piece spawned
+[2025-11-18 16:37:09] Pièce état : MovingState
+[2025-11-18 16:37:11] Power-up SlowDown appliqué à la pièce
+[2025-11-18 16:37:11] New piece spawned
+[2025-11-18 16:37:12] Pièce état : MovingState
+[2025-11-18 16:37:14] New piece spawned
+[2025-11-18 16:37:14] Pièce état : MovingState
+[2025-11-18 16:37:15] New piece spawned
+[2025-11-18 16:37:16] Pièce état : MovingState
+[2025-11-18 16:37:17] New piece spawned
+[2025-11-18 16:37:17] Pièce état : MovingState
+[2025-11-18 16:37:18] Power-up SlowDown appliqué à la pièce
+[2025-11-18 16:37:18] New piece spawned
+[2025-11-18 16:37:19] Pièce état : MovingState
+[2025-11-18 16:37:20] New piece spawned
+[2025-11-18 16:37:20] Pièce état : MovingState
+[2025-11-18 16:37:21] New piece spawned
+[2025-11-18 16:37:21] Pièce état : MovingState
+[2025-11-18 16:37:22] Power-up SlowDown appliqué à la pièce
+[2025-11-18 16:37:22] New piece spawned
+[2025-11-18 16:37:23] Pièce état : MovingState
+[2025-11-18 16:37:23] Power-up SlowDown appliqué à la pièce
+[2025-11-18 16:37:23] New piece spawned
+[2025-11-18 16:37:24] Pièce état : MovingState
+[2025-11-18 16:37:24] New piece spawned
+[2025-11-18 16:38:56] New piece spawned
+[2025-11-18 16:38:56] Pièce état : MovingState
+[2025-11-18 16:43:07] New piece spawned
+[2025-11-18 16:43:08] Pièce état : MovingState
+[2025-11-18 17:01:30] Power-up SlowDown appliqué à la pièce
+[2025-11-18 17:01:30] New piece spawned
+[2025-11-18 17:01:31] Pièce état : MovingState
+[2025-11-18 17:01:33] Pièce tournée
+[2025-11-18 17:01:34] Pièce tournée
+[2025-11-18 17:01:34] Pièce tournée
+[2025-11-18 17:01:35] Pièce tournée
+[2025-11-18 17:02:01] New piece spawned
+[2025-11-18 17:02:02] Pièce état : MovingState
+[2025-11-18 17:02:02] Pièce tournée
+[2025-11-18 17:02:03] Pièce tournée
+[2025-11-18 17:02:03] Pièce tournée
+[2025-11-18 17:02:05] Pièce tournée
+[2025-11-18 17:02:08] New piece spawned
+[2025-11-18 17:02:09] Pièce état : MovingState
+[2025-11-18 17:59:56] New piece spawned
+[2025-11-18 17:59:56] Pièce état : MovingState
+[2025-11-18 17:59:59] Pièce tournée
+[2025-11-18 18:00:01] New piece spawned
+[2025-11-18 18:00:01] Pièce état : MovingState
+[2025-11-18 18:00:12] New piece spawned
+[2025-11-18 18:00:12] Pièce état : MovingState
+[2025-11-18 18:00:23] New piece spawned
+[2025-11-18 18:00:23] Pièce état : MovingState
+[2025-11-18 18:00:32] New piece spawned
+[2025-11-18 18:00:33] Pièce état : MovingState
+[2025-11-18 18:00:40] New piece spawned
+[2025-11-18 18:00:41] Pièce état : MovingState
+[2025-11-18 18:00:48] New piece spawned
+[2025-11-18 18:00:49] Pièce état : MovingState
+[2025-11-18 18:04:40] New piece spawned
+[2025-11-18 18:04:41] Pièce état : MovingState
+[2025-11-18 18:04:51] Power-up SlowDown appliqué à la pièce
+[2025-11-18 18:04:51] New piece spawned
+[2025-11-18 18:04:51] Pièce état : MovingState
+[2025-11-18 18:04:55] New piece spawned
+[2025-11-18 18:04:55] Pièce état : MovingState
+[2025-11-18 18:04:57] New piece spawned
+[2025-11-18 18:04:57] Pièce état : MovingState
+[2025-11-18 18:04:58] New piece spawned
+[2025-11-18 18:04:59] Pièce état : MovingState
+[2025-11-18 18:04:59] Pièce tournée
+[2025-11-18 18:04:59] Pièce tournée
+[2025-11-18 18:05:01] New piece spawned
+[2025-11-18 18:05:01] Pièce état : MovingState
+[2025-11-18 18:05:02] Power-up SlowDown appliqué à la pièce
+[2025-11-18 18:05:02] New piece spawned
+[2025-11-18 18:05:03] Pièce état : MovingState
+[2025-11-18 18:05:04] Power-up SlowDown appliqué à la pièce
+[2025-11-18 18:05:04] New piece spawned
+[2025-11-18 18:05:05] Pièce état : MovingState
+[2025-11-18 18:05:06] New piece spawned
+[2025-11-18 18:05:07] Pièce état : MovingState
+[2025-11-18 18:05:08] New piece spawned
+[2025-11-18 18:05:08] Pièce état : MovingState
+[2025-11-18 18:05:09] New piece spawned
+[2025-11-18 18:05:09] Pièce état : MovingState
+[2025-11-18 18:05:10] Power-up SlowDown appliqué à la pièce
+[2025-11-18 18:05:10] New piece spawned
+[2025-11-18 18:05:20] New piece spawned
+[2025-11-18 18:05:20] Pièce état : MovingState
+[2025-11-18 18:05:25] New piece spawned
+[2025-11-18 18:05:25] Pièce état : MovingState
+[2025-11-18 18:05:29] New piece spawned
+[2025-11-18 18:05:29] Pièce état : MovingState
+[2025-11-18 18:05:37] New piece spawned
+[2025-11-18 18:05:38] Pièce état : MovingState
+[2025-11-19 20:38:47] New piece spawned
+[2025-11-19 20:38:48] Pièce état : MovingState
+[2025-11-19 20:38:56] Pièce tournée
+[2025-11-19 20:38:57] Pièce tournée
+[2025-11-19 20:38:59] New piece spawned
+[2025-11-19 20:38:59] Pièce état : MovingState
+[2025-11-19 20:39:00] Pièce tournée
+[2025-11-19 20:39:01] Pièce tournée
+[2025-11-19 20:39:01] Pièce tournée
+[2025-11-19 20:39:02] Pièce tournée
+[2025-11-19 20:39:02] Pièce tournée
+[2025-11-19 20:39:02] Pièce tournée
+[2025-11-19 20:39:02] Pièce tournée
+[2025-11-19 20:39:03] Pièce tournée
+[2025-11-19 20:39:03] Pièce tournée
+[2025-11-19 20:39:04] Pièce tournée
+[2025-11-19 20:39:04] Pièce tournée
+[2025-11-19 20:39:06] New piece spawned
+[2025-11-19 20:39:07] Pièce état : MovingState
+[2025-11-19 20:39:08] New piece spawned
+[2025-11-19 20:39:09] Pièce état : MovingState
+[2025-11-19 20:39:10] New piece spawned
+[2025-11-19 20:39:10] Pièce état : MovingState
+[2025-11-19 20:39:11] New piece spawned
+[2025-11-19 20:39:12] Pièce état : MovingState
+[2025-11-19 20:39:13] New piece spawned
+[2025-11-19 20:39:13] Pièce état : MovingState
+[2025-11-19 20:39:14] New piece spawned
+[2025-11-19 20:39:14] Pièce état : MovingState
+[2025-11-19 20:39:15] New piece spawned
+[2025-11-19 20:39:15] Pièce état : MovingState
+[2025-11-19 20:39:16] New piece spawned
+[2025-11-19 20:39:16] Pièce état : MovingState
+[2025-11-19 20:39:17] New piece spawned
+[2025-11-19 20:39:17] Pièce état : MovingState
+[2025-11-19 20:39:18] New piece spawned
+[2025-11-19 20:39:21] New piece spawned
+[2025-11-19 20:39:21] Pièce état : MovingState

@@ -1,47 +1,34 @@
-
 package com.mycompany.tetrisgame.models.game;
 
-//MenuState est l’état du jeu quand on est dans le menu principal (avant que le joueur commence à jouer).
-//MenuState = écran de démarrage
-//Dans cet état, plein d’actions sont impossibles (pause, resume…), et une seule action est logique :
-//start() → commencer la partie → passer en PlayingState.
-public class MenuState implements GameStatee {
+import com.mycompany.tetrisgame.TetrisGameApp;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.stage.Stage;
 
-    /*
-     * @Override
-     * public void start(GameContext context) {
-     * System.out.println("Démarrage du jeu depuis le menu...");
-     * 
-     * context.setState(new PlayingState());
-     * }
-     */
+public class MenuState implements GameStatee {
 
     @Override
     public void start(GameContext context) {
-        // Démarre le jeu depuis le menu
-        context.setState(new PlayingState());
-        context.getController().getTimer().start();
-        context.getController().getPauseButton().setText("Pause");
-        System.out.println("Jeu commencé depuis le menu");
+        try {
+            Parent root = FXMLLoader.load(getClass().getResource("/com/mycompany/tetrisgame/MainMenu.fxml"));
+            Stage stage = TetrisGameApp.getPrimaryStage();
+            stage.setScene(new Scene(root));
+            stage.show();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 
     @Override
-    public void pause(GameContext context) {
-        // Pas de pause possible dans le menu
-    }
+    public void pause(GameContext context) {}
 
     @Override
-    public void resume(GameContext context) {
-        // Pas de reprise possible dans le menu
-    }
+    public void resume(GameContext context) {}
 
     @Override
-    public void gameOver(GameContext context) {
-        // Menu ne peut pas déclencher GameOver
-    }
+    public void gameOver(GameContext context) {}
 
     @Override
-    public void update(GameContext context) {
-        // Afficher animations menu si nécessaire
-    }
+    public void update(GameContext context) {}
 }

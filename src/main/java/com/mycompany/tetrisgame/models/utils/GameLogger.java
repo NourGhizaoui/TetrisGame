@@ -40,38 +40,7 @@ public class GameLogger {
         writer.println("[" + timestamp + "] " + message);
         System.out.println("LOG: " + message); // affichage console optionnel
     }
-    
-    
-    private void write(String type, String message) {
-        String timestamp = LocalDateTime.now()
-                .format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss"));
 
-        writer.println("[" + timestamp + "] [" + type + "] " + message);
-        System.out.println("LOG: [" + type + "] " + message);
-    }
-    
-    
-  // --- TYPES DE LOG ---
-    public void info(String message) {
-        write("INFO", message);
-    }
-
-    public void state(String object, String oldState, String newState) {
-        write("STATE", object + ": " + oldState + " -> " + newState);
-    }
-
-    public void event(String message) {
-        write("EVENT", message);
-    }
-
-    public void decorator(String decoratorName, String target, String action) {
-        write("DECORATOR", decoratorName + " " + action + " to " + target);
-    }
-
-    public void error(String message) {
-        write("ERROR", message);
-    }
-    
     // Fermer le logger proprement (à appeler à la fin du jeu)
     //Ferme correctement le fichier à la fin du jeu pour éviter les pertes de données.
     public void close() {

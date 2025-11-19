@@ -13,6 +13,7 @@ com\mycompany\tetrisgame\models\grid\Cell.class
 com\mycompany\tetrisgame\models\powerup\PiecePowerUp.class
 com\mycompany\tetrisgame\models\grid\GridComponent.class
 com\mycompany\tetrisgame\models\game\PauseState.class
+com\mycompany\tetrisgame\TetrisGameApp.class
 com\mycompany\tetrisgame\controllers\Controller.class
 com\mycompany\tetrisgame\models\pieces\PieceState.class
 com\mycompany\tetrisgame\models\utils\GameSettings.class
@@ -22,6 +23,7 @@ com\mycompany\tetrisgame\controllers\Controller$1.class
 com\mycompany\tetrisgame\models\game\GameContext.class
 com\mycompany\tetrisgame\models\game\PlayingState.class
 com\mycompany\tetrisgame\models\pieces\IdleState.class
+com\mycompany\tetrisgame\controllers\Controller$3.class
 com\mycompany\tetrisgame\models\pieces\MovingState.class
 com\mycompany\tetrisgame\models\powerup\ExtraLineDecorator.class
 com\mycompany\tetrisgame\models\pieces\DroppedState.class
