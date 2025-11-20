@@ -1,12 +1,82 @@
-# Fichiers compilés
+#############################
+# Java
+#############################
 *.class
-*.jar
-
-# Dossiers NetBeans / IDE
-nbproject/private/
-build/
-dist/
-
-# Fichiers système
-.DS_Store
 *.log
+*.ctxt
+hs_err_pid*
+replay_pid*
+
+#############################
+# Maven
+#############################
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+
+#############################
+# NetBeans
+#############################
+nbproject/private/
+nbbuild/
+dist/
+build/
+nbdist/
+nbactions.xml
+nb-configuration.xml
+*.orig
+
+# Cache NetBeans
+nbproject/private/
+.build/
+.netbeans/
+
+#############################
+# JavaFX temporary files
+#############################
+*.fxml~
+*.bak
+
+#############################
+# Logs
+#############################
+*.log
+
+#############################
+# System files (Windows / macOS)
+#############################
+# Windows
+Thumbs.db
+Desktop.ini
+
+# macOS
+.DS_Store
+
+#############################
+# IntelliJ (si jamais tu ouvres le projet dedans)
+#############################
+.idea/
+*.iml
+out/
+
+#############################
+# VSCode (au cas où)
+#############################
+.vscode/
+
+#############################
+# Packaging
+#############################
+*.jar
+*.war
+*.ear
+
+#############################
+# Backup
+#############################
+*~
+*.backup
+
