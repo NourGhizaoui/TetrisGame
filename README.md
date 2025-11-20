@@ -1,54 +1,105 @@
-# Tetris Game - JavaFX
+# Tetris Game – JavaFX
 
 ## Description
-Ce projet est une implémentation du jeu **Tetris** en Java avec **JavaFX**.  
-Le jeu intègre plusieurs **Design Patterns** pour organiser le code de manière modulaire et maintenable, et propose une interface graphique simple et fonctionnelle.
+Ce projet est une implémentation complète du jeu **Tetris** en Java avec JavaFX.  
+Le jeu comporte :
+- Une grille dynamique  
+- Des pièces Tetris (I, O, T, L, J, S, Z) générées automatiquement  
+- Un système de score  
+- La suppression automatique des lignes complètes  
+- Un menu principal, un écran de pause et un écran Game Over  
+- La gestion des états du jeu grâce au **State Pattern**  
 
-### Fonctionnalités
-- Jouabilité classique de Tetris (déplacement, rotation, chute rapide des pièces)
-- Gestion des niveaux et du score
-- Pause et reprise du jeu
-- Suppression automatique des lignes complètes
-- Interface graphique responsive avec JavaFX
-- Implémentation de **Design Patterns** :
-  - State
-  - Singleton
-  - Factory
-  - Observer
-  - Decorator (optionnel selon l’implémentation)
+Ce projet a été développé dans le cadre d’un projet académique.
 
-## Structure du projet
-TetrisGame/
-│
-├─ src/
-│ ├─ application/ # Classe Main et configuration JavaFX
-│ ├─ controllers/ # Contrôleurs pour le jeu et les states
-│ ├─ models/ # Classes de données (Grid, Cell, Piece, GameState)
-│ └─ utils/ # Classes utilitaires (Logger, Settings)
-│
-├─ resources/ # Fichiers FXML, CSS et images
-│
-├─ README.md # Documentation du projet
-└─ .gitignore # Ignorer fichiers temporaires, binaires et IDE
+---
 
+## Membres du Groupe
+- Nour Ghizaoui
+- Aymen rezgui
+- Ben hareb amine
+- -Hamza snoussi
+## Technologies Utilisées
+- **Langage :** Java 24 (NetBeans Default)  
+- **Framework GUI :** JavaFX  
+- **Build :** Maven (pom.xml déjà configuré)  
+- **Logging :** GameLogger (custom)  
+- **IDE :** NetBeans 25  
+- **Architecture :** MVC + Design Patterns  
+
+### 1. **State Pattern**
+Utilisé dans le package :
+Gère les états :
+- Menu (`MainMenu.fxml`)
+- En jeu (`GameView.fxml`)
+- Pause (`PauseMenu.fxml`)
+- GameOver (`GameOver.fxml`)
+
+Chaque état a un comportement différent.
+
+---
+### 2. **Decorator Pattern**
+ – Power-ups 
+Implémenté dans : Package models.powerup
+PiecePowerUp (classe abstraite)
+
+### 3. **Composite  Pattern**
+
+Implémenté dans :
+
+GridComponent (interface)
+
+Cell (feuille)
+
+Piece (composite contenant plusieurs blocs)
+
+➡️ Une pièce est composée de plusieurs cellules
+
+### 4. **Factory Pattern**
+Package :
+- `PieceFactory` génère automatiquement les pièces :
+  - I, O, T, L, J, S, Z
+
+### 5. **Singleton Pattern**
+Dans le package :
+com.mycompany.tetrisgame.models.utils
+
+markdown
+Copier le code
+- `GameSettings`  
+- `GameLogger`  
+
+Ces classes sont instanciées une seule fois pour tout le projet.
 
 ## Installation
 
-1. Cloner le dépôt :
+### Prérequis
+- JDK 24
+- Maven installé  
+- JavaFX configuré
+
+1. **Cloner le dépôt**
 ```bash
 git clone https://github.com/votre-utilisateur/TetrisGame.git
-cd TetrisGame
-Ouvrir le projet dans NetBeans, IntelliJ IDEA ou tout IDE compatible JavaFX.
+Compiler : mvn clean install
 
-S’assurer que le JDK 17+ ou supérieur est installé et que JavaFX est configuré.
+Exécuter :  mvn javafx:run
 
-Exécuter la classe principale Main.java.
-Utilisation
+Utilisation (Commandes du Jeu)
 
-Touches directionnelles : déplacer et faire tourner les pièces
+Flèche gauche → déplacer la pièce à gauche
 
-Espace : chute rapide
+Flèche droite → déplacer la pièce à droite
 
-P : pause/reprise du jeu
+Flèche haut → rotation de la pièce
 
-Les lignes complètes sont supprimées automatiquement et le score est mis à jour.
+Flèche bas → descente plus rapide
+
+Espace → chute instantanée
+
+P → pause / reprise
+
+Échap → retour au menu (si implémenté)
+
+
+---
